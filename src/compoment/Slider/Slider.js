@@ -7,8 +7,8 @@ export default function Slider() {
     const [slideIndex, setSlideIndex] = useState(1)
 
     const nextSlide = () => {
-        timer=0
-        timer=setInterval(nextSlide, 4000)
+        // timer=0
+        // timer=setInterval(nextSlide, 4000)
         if(slideIndex !== dataSlider.length){
             setSlideIndex(slideIndex + 1)
         } 
@@ -29,7 +29,7 @@ export default function Slider() {
     const moveDot = index => {
         setSlideIndex(index)
     }
-    let timer=setInterval(nextSlide, 4000)
+    // let timer=setInterval(nextSlide, 4000)
     return (
         <div className="container-slider">
             {dataSlider.map((obj, index) => {
