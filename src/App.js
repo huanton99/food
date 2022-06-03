@@ -5,6 +5,7 @@ import './App.css';
 import { useState } from 'react';
 import Header from './compoment/Header';
 import Cart from './Cart/Cart';
+// import ChatBox from './compoment/ChatBox/chatBox'
 import CartProvider from './store/CartProvider'
 const DUMMY_MEALS = [
   {
@@ -170,6 +171,8 @@ function App() {
       ))}
     </div>
     </main>
+    {/* <ChatBox/> */}
+
     {cartIsShown && <Cart onClose={hideCartHandler} />}
     </CartProvider>
     </>
